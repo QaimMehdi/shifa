@@ -1,73 +1,159 @@
-# Welcome to your Lovable project
+# Shifa – AI-Powered Smart Healthcare Platform
 
-## Project info
+**S.H.I.F.A** – Smart Healthcare, Intelligent Forecasting & Assistance
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+A web-based AI healthcare platform designed to assist users with symptom checking, drug safety, emergency guidance, and smart hospital recommendations. Shifa aims to improve healthcare accessibility, safety, and preventive care, especially in regions with doctor shortages and fragmented healthcare systems.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Overview
 
-**Use Lovable**
+Shifa’s long-term vision is to become a **B2B AI SaaS** used by healthcare apps (e.g. Oladoc, Marham). Initially it is **B2C**, allowing direct user interaction. The platform is **assistive AI only**—it does not replace doctors; it focuses on prevention, emergency alerts, and guidance.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Core Features
 
-**Use your preferred IDE**
+| Feature | Description |
+|--------|-------------|
+| **AI Symptom Intelligence Engine** | Users enter symptoms via chat or form; AI suggests possible diseases with risk levels and preventive guidance. |
+| **Predictive Health Risk Forecaster** | ML-based analysis of user data to predict future disease risks (e.g. diabetes, heart conditions). |
+| **Smart Emergency Response Advisor** | Detects critical symptoms, sends emergency alerts, and recommends nearest suitable hospitals and ambulances. |
+| **Medical Drug Conflict Detector** | Users enter medicines; AI detects unsafe interactions, optimal timings, and dosages. |
+| **Location-Based Healthcare Priority Finder** | Recommends best hospital by distance, specialization, availability, and emergency capability; provides nearest ambulance contact. |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Secondary Features / Future Enhancements
 
-Follow these steps:
+- Multilingual AI support (English, Urdu, Pashto)
+- AI chatbot interface for all core modules
+- Integration with wearables for vitals tracking
+- Video consultation in emergencies
+- Nurse/hospital urgent requests (B2B expansion)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Target Users
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Primary:** Urban families, tech-savvy individuals, elderly caregivers  
+- **Secondary:** Rural users (via multilingual support)  
+- **Long-term:** Hospitals, clinics, telemedicine platforms (B2B SaaS)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## Vision & Mission
+
+**Vision:** To become a trusted digital healthcare platform providing AI-assisted health guidance, preventive care insights, and emergency decision support, bridging gaps in the healthcare ecosystem.
+
+**Mission:**
+
+- Deliver secure, verified health information and services  
+- Empower users with AI-assisted decision-making  
+- Ensure data safety and compliance with local regulations  
+- Build a scalable B2B AI SaaS platform for hospitals and healthcare apps  
+
+---
+
+## Problem Statement
+
+- Lack of centralized, verified home healthcare services  
+- Difficulty in choosing hospitals or responding to emergencies  
+- Unawareness of drug interactions and preventive healthcare  
+- Users relying on unreliable internet searches or self-medication  
+
+---
+
+## Expected Outcomes
+
+- Functional AI-powered health assistant  
+- Verified nurse and hospital guidance  
+- Preventive healthcare and emergency decision support  
+- Scalable system for B2B SaaS expansion  
+
+---
+
+## Technology Stack
+
+### Current (Web)
+
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | React, TypeScript, Vite |
+| **UI** | Tailwind CSS, shadcn/ui, Framer Motion |
+| **Routing** | React Router |
+| **State / Data** | TanStack Query, React Hook Form, Zod |
+
+### Planned / Future
+
+| Layer | Technology |
+|-------|------------|
+| **Frontend (mobile)** | Flutter / React Native |
+| **Backend** | Node.js + Express or Python (Flask/Django/FastAPI) |
+| **Database** | MongoDB / PostgreSQL |
+| **AI/ML** | Scikit-Learn, TensorFlow, or Hugging Face models |
+| **APIs** | Maps & location, AI symptom models, medicine database |
+| **Security** | JWT authentication, HTTPS, encrypted health data |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (LTS recommended) – [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- npm or bun
+
+### Installation & Run
+
+```bash
+# Clone the repository
+git clone https://github.com/QaimMehdi/shifa.git
+cd shifa
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server with hot reload |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run test` | Run tests |
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure (High Level)
 
-## What technologies are used for this project?
+```
+shifafyp/
+├── src/
+│   ├── components/     # UI components, sections, nearby-care
+│   ├── pages/          # Index, Chat, NearbyCare, SignIn, SignUp, etc.
+│   ├── hooks/          # Custom hooks
+│   ├── lib/            # Utilities
+│   └── assets/         # Images and static assets
+├── public/
+├── index.html
+├── package.json
+└── README.md
+```
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Disclaimer
 
-## How can I deploy this project?
+Shifa is an **assistive AI health platform**. It does not replace professional medical advice, diagnosis, or treatment. Always consult qualified healthcare providers for medical decisions.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Private – Final Year Project (FYP).
